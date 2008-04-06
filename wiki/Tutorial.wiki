@@ -1,0 +1,12 @@
+#summary Quick start to use haXe
+#labels Featured
+
+= Installation =
+
+In order to use physaxe, you need to install the following :
+  * [http://haxe.org/download haXe]
+  * run `haxelib install physaxe` to install the physaxe package
+
+= World, Body, Shape =
+
+Using physaxe is pretty easy. First you have to create a `World` which is a virtual space for the simulation. A world can contain several `Body` instances and each body can contain several `Shape` instances.
