@@ -103,6 +103,6 @@ The following things can be customized :
   * you can create collision groups by modifying the `shape.groups`` integer. Two shapes can collide if `s1.groups & s2.groups != 0` (so the groups is used as bit list). By default, all groups are set to 1.
   * each Body and Shape have an unique ID, which you can use but please do not modify.
 
+= Thanks =
 
-
-
+Thanks to [http://box2d.org Box2D] author Erin Catto for his great software and to Richard Jewson (Glaze) since I started working on Physaxe based on a port of Glaze to haXe, with heavy changes and optimizations.
