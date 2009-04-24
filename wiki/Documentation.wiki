@@ -16,9 +16,13 @@ You can also implement your own custom broadphase by implementing the `phx.col.B
 
 If you want to manually change the position/rotation of a body, don't forget to call `world.sync(b)` after that in order to synchronize the body at the broadphase level.
 
-= Islands =
+= Islands & Sleeping =
 
-An island is a group of touching bodies. It has an energy which is calculated based on the `motion` of the bodies it contains. As soon as its energy is below `world.sleepEpsilon`, it will sleep and then no more collision between the bodies contained in the island will be performed.
+An island is a group of touching bodies.
+
+It has an energy which is calculated based on the `motion` of the bodies it contains. As soon as its energy is below `world.sleepEpsilon`, it will sleep and then no more collision between the bodies contained in the island will be performed. 
+
+A sleeping body will not be moved either.
 
 You are not supposed to use islands directly, so sleeping is automatic (you can simply tune `sleepEpsilon` depending on your game). An island and its bodies are automatically wakeup if a another body gets connected to the island (in case an external collision occurs).
 
