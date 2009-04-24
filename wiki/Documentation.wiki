@@ -14,7 +14,7 @@ You can also implement your own custom broadphase by implementing the `phx.col.B
 
 = Moving a body =
 
-If you to manually change the position/rotation of a body, don't forget to call `world.sync(b)` after that in order to synchronize it at the broadphase level.
+If you want to manually change the position/rotation of a body, don't forget to call `world.sync(b)` after that in order to synchronize the body at the broadphase level.
 
 = Islands =
 
